@@ -12,10 +12,8 @@ def pytest_addoption(parser):
     parser.addoption("--browser", default="chrome")
     parser.addoption("--browser_version", action="store", default="93.0")
     parser.addoption("--executor",
-                     # ip адресс хоста где selenium grid и браузеры
-                     # если работаем из докера то для него ваш localhost ВНЕШНИЙ адресс
-                     # при каждом изменении файлов нужно пересоздать image
-                     default="127.0.0.1",
+                     # имя контейнера в сети selenoid
+                     default="selenoid",
                      )
     parser.addoption("--vnc", action="store_true", default=False)
     parser.addoption("--video", action="store_true", default=False)
