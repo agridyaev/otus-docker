@@ -10,7 +10,7 @@ def pytest_addoption(parser):
     parser.addoption("--api_url", default="https://jsonplaceholder.typicode.com")
     parser.addoption("--opencart_url", default="https://demo.opencart.com")
     parser.addoption("--browser", default="chrome")
-    parser.addoption("--browser_version", action="store", default="91.0")
+    parser.addoption("--browser_version", action="store", default="93.0")
     parser.addoption("--executor",
                      # ip адресс хоста где selenium grid и браузеры
                      # если работаем из докера то для него ваш localhost ВНЕШНИЙ адресс
