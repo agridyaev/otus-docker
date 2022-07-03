@@ -1,1 +1,1 @@
-print('Hello, OTUS!')
+print('Using WORKDIR!')
