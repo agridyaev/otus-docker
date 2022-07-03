@@ -1,10 +1,8 @@
 FROM python:3.10
 
-RUN mkdir app
+WORKDIR /app
 
-WORKDIR ./app
-
-COPY ./script.py ./script.py
+COPY script.py script.py
 
 WORKDIR /
 
