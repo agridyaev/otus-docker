@@ -10,7 +10,7 @@ def pytest_addoption(parser):
     parser.addoption("--api_url", default="https://jsonplaceholder.typicode.com")
     parser.addoption("--opencart_url", default="https://demo.opencart.com")
     parser.addoption("--browser", default="chrome")
-    parser.addoption("--browser_version", action="store", default="100.0")
+    parser.addoption("--browser_version", action="store", default="107.0")
     parser.addoption("--executor",
                      # имя контейнера в сети selenoid
                      default="selenoid",
