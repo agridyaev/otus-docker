@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
 
-CMD ["/bin/ps"]
+CMD ["ps"]
 
-ENTRYPOINT ["ls"]
+ENTRYPOINT ["ps"]
